@@ -1,0 +1,14 @@
+{
+    "admin/system/poweroff": {
+        "title": "Power Off",
+        "order": 99,
+        "action": {
+            "type": "view",
+            "path": "system/poweroff"
+        },
+        "depends": {
+            "acl": [ "luci-app-poweroff" ],
+            "fs": { "/sbin/poweroff": "executable" }
+        }
+    }
+}

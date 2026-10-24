@@ -1,0 +1,70 @@
+#
+# This is free software, licensed under the GNU General Public License v3.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: LuCI Application poweroff\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-23 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "⚠️ Power Off Device"
+msgstr ""
+
+msgid "Perform Power Off"
+msgstr ""
+
+msgid "Turn off the power to the device you are using"
+msgstr ""
+
+msgid "This action will immediately turn off the power to your device. Make sure to save all your work before proceeding."
+msgstr ""
+
+msgid "Powering off device..."
+msgstr ""
+
+msgid "Confirm Power Off"
+msgstr ""
+
+msgid "Warning!"
+msgstr ""
+
+msgid "Warning: There are unsaved changes that will be lost when the device powers off!"
+msgstr ""
+
+msgid "Before you continue:"
+msgstr ""
+
+msgid "Save all unsaved settings"
+msgstr ""
+
+msgid "Check if other users are active"
+msgstr ""
+
+msgid "The device needs to be manually turned on"
+msgstr ""
+
+msgid "Powering Off"
+msgstr ""
+
+msgid "The device should power off within a few seconds. If the device remains on, you may need to perform a manual shutdown."
+msgstr ""
+
+msgid "Power off failed with code %s"
+msgstr ""
+
+msgid "Power Off"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Error!"
+msgstr ""

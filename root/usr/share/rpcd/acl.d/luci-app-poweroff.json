@@ -1,0 +1,13 @@
+{
+	"luci-app-poweroff": {
+		"description": "Allow powering off the device",
+		"write": {
+			"file": {
+				"/sbin/poweroff": [ "exec" ]
+			},
+			"ubus": {
+				"file": [ "exec" ]
+			}
+		}
+	}
+}
