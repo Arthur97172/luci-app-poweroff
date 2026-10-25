@@ -6,6 +6,8 @@ A LuCI application that provides a one-click "Power Off" page for OpenWrt / Immo
 
 > ⚠️ The device will not restart automatically after powering off; you need to power-cycle it manually.
 
+![LuCI App Poweroff screenshot](screenshot.png)
+
 ## Features
 
 - Adds a "Power Off" page to the LuCI System menu with a confirmation dialog to prevent accidental shutdowns
@@ -14,17 +16,6 @@ A LuCI application that provides a one-click "Power Off" page for OpenWrt / Immo
 - Works with both light and dark LuCI themes, without custom colors or inline styles
 - Ships a Simplified Chinese translation (`luci-i18n-poweroff-zh-cn`)
 - Architecture-independent package (`all`)
-
-## Compatibility
-
-| System | Package format | Package manager |
-| --- | --- | --- |
-| OpenWrt / ImmortalWrt 24.10 and earlier | `.ipk` | opkg |
-| OpenWrt / ImmortalWrt 25.12+ | `.apk` | apk |
-
-- Dependency: `luci-base` (which already provides `rpcd` and `rpcd-mod-file`)
-- Architecture: `all`
-- The menu entry is only shown when `/sbin/poweroff` exists (BusyBox `poweroff` is enabled by default)
 
 ## Installation
 
@@ -63,6 +54,17 @@ make package/luci-app-poweroff/compile V=s
 ```
 
 The resulting packages are placed in `bin/packages/<arch>/luci/`. The repository's GitHub Actions workflow builds both `.ipk` and `.apk` packages automatically.
+
+## Compatibility
+
+| System | Package format | Package manager |
+| --- | --- | --- |
+| OpenWrt / ImmortalWrt 24.10 and earlier | `.ipk` | opkg |
+| OpenWrt / ImmortalWrt 25.12+ | `.apk` | apk |
+
+- Dependency: `luci-base` (which already provides `rpcd` and `rpcd-mod-file`)
+- Architecture: `all`
+- The menu entry is only shown when `/sbin/poweroff` exists (BusyBox `poweroff` is enabled by default)
 
 ## Usage
 

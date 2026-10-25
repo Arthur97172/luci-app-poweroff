@@ -6,6 +6,8 @@
 
 > ⚠️ 关机后设备不会自动重启，需要手动断电再重新上电。
 
+![LuCI App Poweroff 截图](screenshot.png)
+
 ## 功能特性
 
 - 在 LuCI 的「系统」菜单中添加「关机」页面，并提供确认弹窗，避免误触
@@ -14,17 +16,6 @@
 - 兼容 LuCI 亮色 / 暗色主题，无自定义颜色与内联样式
 - 提供简体中文翻译（`luci-i18n-poweroff-zh-cn`）
 - 纯前端资源包，架构无关（`all`）
-
-## 兼容性
-
-| 系统 | 包格式 | 包管理器 |
-| --- | --- | --- |
-| OpenWrt / ImmortalWrt 24.10 及更早 | `.ipk` | opkg |
-| OpenWrt / ImmortalWrt 25.12+ | `.apk` | apk |
-
-- 依赖：`luci-base`（已包含 `rpcd` 与 `rpcd-mod-file`）
-- 架构：`all`
-- 仅当系统存在 `/sbin/poweroff` 时显示菜单项（BusyBox 的 `poweroff` 默认启用）
 
 ## 安装
 
@@ -63,6 +54,17 @@ make package/luci-app-poweroff/compile V=s
 ```
 
 产物位于 `bin/packages/<架构>/luci/`。仓库的 GitHub Actions 会自动为两个版本分别构建 `.ipk` 和 `.apk`。
+
+## 兼容性
+
+| 系统 | 包格式 | 包管理器 |
+| --- | --- | --- |
+| OpenWrt / ImmortalWrt 24.10 及更早 | `.ipk` | opkg |
+| OpenWrt / ImmortalWrt 25.12+ | `.apk` | apk |
+
+- 依赖：`luci-base`（已包含 `rpcd` 与 `rpcd-mod-file`）
+- 架构：`all`
+- 仅当系统存在 `/sbin/poweroff` 时显示菜单项（BusyBox 的 `poweroff` 默认启用）
 
 ## 使用
 
